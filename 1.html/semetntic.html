@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple e-commerce architecture</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="./Flag_of_Algeria.svg.png" width="100px" alt="" />
+				<ul>
+					<li>
+						<a href="./home-page.html">Home</a>
+					</li>
+					<li>
+						<a href="/test.html">about us</a>
+					</li>
+					<li>contact us</li>
+					<li>login</li>
+				</ul>
+			</nav>
+			<section>
+				<video>
+					<source src="" />
+					<source src="" />
+					<source src="" />
+				</video>
+				<picture> </picture>
+				<iframe
+					width="1312"
+					height="738"
+					src="https://www.youtube.com/embed/jCvSEuHms5M"
+					title="Masha And The Bear - 🌞🏖 Summer Holidays🏖🌞"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</section>
+			<form action="./semetntic.html" method="get">
+				<input type="text" name="first-name" placeholder="First name" required />
+				<input type="text" name="last-name" placeholder="last name" />
+				<div>
+					<label for="male"> Male </label>
+					<input type="radio" name="gender" value="male" id="male" />
+				</div>
+				<div>
+					<label for="female"> Female </label>
+					<input type="radio" name="gender" value="female" id="female" />
+				</div>
+				<h5>Services</h5>
+				<div>
+					<label for="marketing"> marketing </label>
+					<input type="checkbox" name="services" value="marketing" id="marketing" />
+				</div>
+				<div>
+					<label for="finance"> finance </label>
+					<input type="checkbox" name="services" value="finance" id="finance" />
+				</div>
+				<div>
+					<label for="request"> Request type </label>
+					<select id="request" name="request">
+						<option value="" disabled>-please select-</option>
+						<option value="finance">finance request</option>
+						<option value="buying">buying</option>
+					</select>
+				</div>
+
+				<button type="submit">send</button>
+			</form>
+		</header>
+	</body>
+</html>
