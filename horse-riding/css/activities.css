@@ -1,0 +1,37 @@
+.activities {
+	background-color: white;
+	display: flex;
+	width: 100%;
+}
+.activities .container {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+.badges {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -50px;
+}
+.badge-element {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.badge-text {
+	text-align: center;
+	font-size: 29px;
+	font-weight: 600;
+	color: var(--color-primary);
+}
+.badge-logo {
+	width: 200px;
+	transition: transform 500ms;
+}
+.badge-logo:hover {
+	transform: translateY(-20px);
+}
+
+/* ------Activity---  */

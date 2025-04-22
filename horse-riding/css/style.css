@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: var(--font-family);
+}
+:root {
+	--color-primary: #50302d;
+	--color-secondary: #ffd22c;
+	--font-family: 'Cormorant SC', serif;
+}
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
