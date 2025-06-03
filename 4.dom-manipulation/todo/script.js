@@ -1,5 +1,6 @@
 const form = document.querySelector('form.todo-form');
 const todoList = document.querySelector('ul.todo-list');
+
 let list = [];
 form.onsubmit = function (event) {
 	event.preventDefault();
