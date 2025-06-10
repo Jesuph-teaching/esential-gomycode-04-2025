@@ -1,12 +1,12 @@
 header {
 	display: flex;
 	padding: 3rem 0;
-	& .navbar {
+	.navbar {
 		display: flex;
 		align-items: center;
 		gap: 3rem;
 
-		& .navigation {
+		.navigation {
 			display: flex;
 			flex-direction: row;
 			align-items: center;

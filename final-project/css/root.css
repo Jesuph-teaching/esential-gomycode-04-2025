@@ -97,6 +97,10 @@ main span {
 	&:hover {
 		background-color: var(--primary-color-hover);
 		color: var(--primary-color);
+		&.btn-secondary {
+			background-color: rgba(var(--secondary-color), 0.8);
+			color: var(--neutral-color);
+		}
 	}
 }
 .container {

@@ -10,11 +10,18 @@ main #sponsors {
 		width: 100%;
 	}
 	.banner {
-		display: flex;
-		align-items: center;
-		gap: 5rem;
 		width: 100%;
-		padding: 2rem 0;
+		.banner-container {
+			display: flex;
+			align-items: center;
+			gap: 5rem;
+			padding: 2rem 0;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
 		&:nth-child(1) {
 			background-color: var(--primary-color);
 			img {
@@ -30,10 +37,6 @@ main #sponsors {
 			z-index: 4;
 			background-color: rgba(var(--secondary-color), 0.15);
 			backdrop-filter: blur(8px);
-		}
-		img {
-			max-width: 100%;
-			height: auto;
 		}
 	}
 }
