@@ -11,7 +11,7 @@
 		padding: 0;
 		margin: 0;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(360px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 3rem;
 		.card {
 			background-color: rgb(var(--secondary-color));
@@ -50,12 +50,18 @@
 
 @media screen and (max-width: 1200px) {
 	#services ul {
-		grid-template-columns: repeat(2, minmax(360px, 1fr));
+		grid-template-columns: repeat(2, 1fr);
+		.card {
+			padding: 2rem 3rem;
+		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	#services ul {
 		grid-template-columns: 1fr;
+		.card {
+			padding: 1.5rem 2rem;
+		}
 	}
 }
