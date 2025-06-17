@@ -104,6 +104,34 @@ main span {
 		}
 	}
 }
+/* tabs */
+.tabs {
+	display: flex;
+	gap: 2rem;
+	.tab {
+		border: 1px solid transparent;
+		padding: 0 0 1rem 0;
+		transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+		cursor: pointer;
+		font-weight: 600;
+		&.tab-active,
+		&:hover {
+			border-bottom-color: var(--primary-color);
+			color: var(--primary-color);
+		}
+	}
+}
+.tab-content {
+	display: flex;
+	width: 100%;
+	.tab-pane {
+		display: none;
+		width: 100%;
+		&.active {
+			display: block;
+		}
+	}
+}
 .container {
 	width: 100%;
 	margin-left: auto;
@@ -168,7 +196,7 @@ h4::before {
 h5 {
 	font-size: 1.5rem;
 	font-weight: 800;
-	margin-bottom: 0.6rem;
+	margin: 0 0 0.6rem 0;
 }
 @media (min-width: 640px) {
 	.container {

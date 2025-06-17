@@ -40,5 +40,4 @@ const addDotBtnsAndClickHandlers = (emblaApi, dotsNode) => {
 		dotsNode.innerHTML = '';
 	};
 };
-console.log(dotsNodeP);
 addDotBtnsAndClickHandlers(emblaApiP, dotsNodeP);
