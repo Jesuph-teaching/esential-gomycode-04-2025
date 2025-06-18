@@ -11,12 +11,8 @@
         width: 100%;
         display: flex;
         gap: 3rem;
-        white-space: nowrap;
-        animation: scrollLogos linear infinite;
     }
-    ul:hover {
-        animation-play-state: paused;
-    }
+
     li {
         background-color: rgb(var(--secondary-color));
         padding: 1.75rem 2.5rem;
@@ -24,35 +20,3 @@
         flex-shrink: 0;
     }
 }
-
-/* Animation normale (gauche → droite) */
-@keyframes scrollLogos {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-/* Animation inversée (droite → gauche) */
-@keyframes scrollLogosReverse {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-/* @media screen and (max-width: 1200px) {
-    #services ul {
-        grid-template-columns: repeat(2, minmax(360px, 1fr));
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #services ul {
-        grid-template-columns: 1fr;
-    }
-} */
