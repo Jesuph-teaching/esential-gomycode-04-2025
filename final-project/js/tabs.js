@@ -1,9 +1,10 @@
 const tabsContainers = document.querySelectorAll('[data-tab-container]');
-
+console.log(tabsContainers);
 tabsContainers.forEach((container) => {
 	const tabs = container.querySelectorAll('.tabs .tab');
 	tabs.forEach((tab) => {
 		tab.onclick = function () {
+			console.log('clicked');
 			const tabAttr = tab.getAttribute('data-tab');
 			container.querySelectorAll('.tab-pane').forEach((pane) => {
 				pane.classList.remove('active');
